@@ -12,7 +12,7 @@ export const CellComponent = ({cell, selected, click}: CellProps) => {
         <div
             className={["cell", cell.color, selected ? "selected" : ""].join(" ")}
             onClick={()=>click(cell)}
-            style={{background: cell.available && cell.figure ? "lightpink" : ""}}
+            style={{background: cell.available && cell.figure ? "salmon" : ""}}
         >
             {cell.available && !cell.figure && <div className={"available"}/>}
             {cell.figure?.logo && <img src={cell.figure.logo} alt=""/>}
